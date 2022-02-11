@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenApp</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <!-- section principale -->
+    <div class="section-principale columns is-12 is-mobile is-multiline  is-centered">
+        <!-- respirateur -->
+        <div class=" box-air column  is-12">
+            <div class="column  container-respirateur is-centered ">
+                <div class="box-bille"></div>
+            
+            </div>
+        </div>
+        <!-- container-reglages -->
+        <div class="container container-reglages columns is-mobile">
+
+            <!-- box-speed -->
+            <div class="box box-speed column  columns is-flex is-multiline">
+
+         <button class="column is-4 button btn-speed-slow"><span class="column is-4  icon has-text-centered icon-slow">
+        <i  class="icon-time fa-2x fas fa-couch "></i></span>Slow</button>
+
+
+        <button class="column is-4 button btn-speed-easy"><span class="column is-4  icon has-text-centered icon-easy">
+        <i  class="icon-time fa-2x fas fa-balance-scale "></i></span>Easy</button>
+
+        <button class="column is-4 button btn-speed-fast"><span class="column is-4 icon has-text-centered icon-fast">
+        <i  class="icon-time fa-2x fas fa-fire "></i></span>Fast</button>
+</div>
+
+
+
+
+            
+            <!-- box-time -->
+            <div class="box box-time column columns   is-flex is-multiline">
+                <input id="inp-time" type="range" class="column is-12 input inp-scale is-half" min="0" max="10" value="5">
+                <span class="column is-12 is-centered icon has-text-centered icone-time has-text-white">
+                    <i  class=" fa-2x fas fa-clock "></i></span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
