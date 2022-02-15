@@ -10,6 +10,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 /* section principale */
 .section-principale{
@@ -20,10 +22,16 @@ body{
     width: 90%;
     display: flex;
 }
+/* container des btn pause et reset */
+.container-btn{
+    display: block;
+    position: absolute;
+    top: 800px;
+}
 /* container du respirateur */
 .box-air{
     height: 80%;
-    background: none;
+    background-color: none;
     border: none;
     margin: 10px;
     padding: 10px;
@@ -34,7 +42,7 @@ body{
 
 
 .container-respirateur{
-    width: 15%;
+    width: 120px;
     min-width: 150px;
     margin: 0 auto;
     height: 650px;
@@ -53,16 +61,16 @@ body{
     background-position: center;
    
     border-radius: 50%;
-    height:10vw;
+    height:100px;
     min-height: 100px;
-    width: 10vw;
+    width: 100px;
     min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     box-shadow: 3px 10px 20px #333;
-    transition: all 0.4s ease-in-out;
+    /* transition: all 0.4s ease-in-out; */
 }
 
 /* reglages */
@@ -71,7 +79,9 @@ body{
     height: 15%;
     width: 90%;
     background: #333;
-    position: relative;
+    position: absolute;
+    top: 900px;
+    border-radius: 15px;
 }
 
 
@@ -83,7 +93,8 @@ body{
     /* margin: 10px; */
     display: flex;
     margin:  0 15px;
-    justify-content: center;
+    justify-content: space-around;
+    
     align-items: center;
     position: relative;
 }
@@ -98,6 +109,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     
 }
 
@@ -107,6 +119,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 .btn-speed-fast{
     padding: 10px;
@@ -114,26 +127,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     
 }
 
-.icon-fast{
-    position: absolute;
-    top: 10px;
-    left:30%;
-    transform: translate(-50%, -50%);
-}
-.icon-slow{
-    position: absolute;
-    top: 10px;
-    left:30%;
-    transform: translate(-50%, -50%);
-}
-.icon-easy{
-    position: absolute;
-    top: 10px;
-    left:30%;
-    transform: translate(-50%, -50%);
+
+
+.icon-easy, .icon-slow, .icon-fast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    
 }
     
     .box-time{
@@ -146,6 +152,7 @@ body{
         align-items: center;
         position: relative;
         background: none;
+        flex-direction: column;
     
     }
     
@@ -153,9 +160,17 @@ body{
         margin: 10px auto;
         width: 90%;
     }
+    #affichageDuTimer{
+       color: white;
+
+
+    }
 
     .icone-time{
+        display: block;
         position: absolute;
-        top : -10%;
+        top : 80px;
+        left: -40px;
+
 
     }

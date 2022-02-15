@@ -13,12 +13,18 @@
 </head>
 <body>
     <!-- section principale -->
+    <div class="container-btn">
+        <button class="button" id="btn-pause">Pause</button>
+        <button class="button" id="btn-reset">Reset</button>
+    </div>
+    <h1 class="text-center" id="timer"></h1>
+
+
     <div class="section-principale columns is-12 is-mobile is-multiline  is-centered">
         <!-- respirateur -->
         <div class=" box-air column  is-12">
             <div class="column  container-respirateur is-centered ">
                 <div class="box-bille"></div>
-            
             </div>
         </div>
         <!-- container-reglages -->
@@ -27,15 +33,15 @@
             <!-- box-speed -->
             <div class="box box-speed column  columns is-flex is-multiline">
 
-         <button class="column is-4 button btn-speed-slow"><span class="column is-4  icon has-text-centered icon-slow">
-        <i  class="icon-time fa-2x fas fa-couch "></i></span>Slow</button>
+         <button class=" is-4  btn-speed-slow"><span class="column is-4   has-text-centered icon-slow">
+        <i  class="icon-time fa-2x fas fa-seedling "></i></span> </button>
 
 
-        <button class="column is-4 button btn-speed-easy"><span class="column is-4  icon has-text-centered icon-easy">
-        <i  class="icon-time fa-2x fas fa-balance-scale "></i></span>Easy</button>
+        <button class=" is-4  btn-speed-easy"><span class="column is-4   has-text-centered icon-easy">
+        <i  class="icon-time  fa-2x fas fa-balance-scale "></i></span></button>
 
-        <button class="column is-4 button btn-speed-fast"><span class="column is-4 icon has-text-centered icon-fast">
-        <i  class="icon-time fa-2x fas fa-fire "></i></span>Fast</button>
+        <button class=" is-4  btn-speed-fast"><span class="column is-4  has-text-centered icon-fast">
+        <i  class="icon-time fa-2x fas fa-fire "></i></span></button>
 </div>
 
 
@@ -43,13 +49,15 @@
 
             
             <!-- box-time -->
-            <div class="box box-time column columns   is-flex is-multiline">
-                <input id="inp-time" type="range" class="column is-12 input inp-scale is-half" min="0" max="10" value="5">
+            <!-- <div class="box box-time column columns   is-flex is-multiline">
+                <input id="inp-time" type="range" class="column is-12 input inp-scale is-half" min="1" max="10" value="5">
+                <p id="affichageDuTimer"> Temps </p>
                 <span class="column is-12 is-centered icon has-text-centered icone-time has-text-white">
-                    <i  class=" fa-2x fas fa-clock "></i></span>
-            </div>
+                    <i  class=" fas fa-clock "></i></span>
+            </div> -->
         </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="app.js"> </script>
 </body>
 </html>
