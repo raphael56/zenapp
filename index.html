@@ -20,8 +20,8 @@
   <body>
     <!-- section principale -->
     <div class="container-btn">
-      <button class="button" id="btn-pause">
-        </button>
+      <!-- <button class="button" id="btn-pause">
+        </button> -->
       <button class="button" id="btn-reset"></button>
     </div>
     
@@ -39,27 +39,33 @@
       <div class=" container-reglages  ">
         <!-- box-speed -->
         <div class=" box-speed is-flex ">
-          <button class="is-4 btn-speed-slow">
-            <span class="column is-4 has-text-centered icon-slow">
-              <i class="icon-time fa-2x fas fa-seedling"></i
+          <button class=" btn-speed-slow">
+            <span class="icon-slow">
+              <i class="icon-speed fa-2x fas fa-seedling"></i
             ></span>
           </button>
 
-          <button class="is-4 btn-speed-easy">
-            <span class="column is-4 has-text-centered icon-easy">
-              <i class="icon-time fa-2x fas fa-balance-scale"></i
+          <button class="btn-speed-easy">
+            <span >
+              <i class="icon-speed fa-2x fas fa-balance-scale"></i
             ></span>
           </button>
 
-          <button class="is-4 btn-speed-fast">
-            <span class="column is-4 has-text-centered icon-fast">
-              <i class="icon-time fa-2x fas fa-fire"></i
+          <button class=" btn-speed-fast">
+            <span class=" icon-fast">
+              <i class="icon-speed fa-2x fas fa-fire"></i
             ></span>
           </button>
         </div>
-
         
       </div>
+      <div class="container-timer">
+        <input type="range" min="1" max="10" value="5" id="timer"> 
+        
+      </div>
+      <span class="timer-span">
+        <p id="text-timer">5 mn</p>
+              </span>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="app.js"></script>
