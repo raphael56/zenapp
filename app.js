@@ -34,27 +34,28 @@ function barreColor(){
 
 
 TL4
-    .fromTo(bulle, { y: 0 }, { duration: 6, ease: "sine.inOut", y: '48vh' , rotation: 360})
+    .fromTo(bulle, { y: 0 }, { duration: 6, ease: "sine.inOut", y: '360px' , rotation: 360})
 
 
 
 TL1.fromTo(
     bulle,
     { y: '0' },
-    { duration: 3, ease: "sine.inOut", y: '47vh', reversed: true, rotation: 100}
-  ).fromTo(bulle, { y: '0' }, { duration: 7, ease: "sine.inOut", y: '47vh' , rotation: 100});
+    { duration: 3, ease: "sine.inOut", y: '360px', reversed: true, rotation: 100}
+  ).fromTo(bulle, { y: '0' }, { duration: 7, ease: "sine.inOut", y: '360px' , rotation: 100});
 
 TL2.fromTo(
     bulle,
     { y: '0' },
-    { duration: 5, ease: "sine.inOut", y: '47vh', reversed: true, rotation: 100}
-  ).fromTo(bulle, { y: '0' }, { duration: 5, ease: "sine.inOut", y: '47vh' , rotation: 100});
+    { duration: 5, ease: "sine.inOut", y: '360px', reversed: true, rotation: 100}
+  ).fromTo(bulle, { y: '0' }, { duration: 5, ease: "sine.inOut", y: '360px' , rotation: 100});
 
 TL3.fromTo(
     bulle,
     { y: '3' },
-    { duration: 6, ease: "sine.inOut", y: '47vh', reversed: true, rotation: 100}
-  ).fromTo(bulle, { y: '3' }, { duration: 4, ease: "sine.inOut", y: '47vh' , rotation: 100});
+    { duration: 7, ease: "sine.inOut", y: '360px', reversed: true, rotation: 100}
+  ).fromTo(bulle, { y: '3' }, { duration: 3, ease: "sine.inOut", y: '360px' , rotation: 100});
+  
 
 btnSlow.addEventListener("click", () => {
     bgSectionPrincipale.style.backgroundColor= "rgba(89, 255, 100, 0.7)";
@@ -110,3 +111,6 @@ timer.addEventListener("change", () => {
     timerText.innerHTML = `${timer.value} mn `;
     barreColor()
 });
+
+
+
