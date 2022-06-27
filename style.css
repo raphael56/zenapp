@@ -24,7 +24,7 @@ body {
 }
 /* section principale */
 .section-principale {
-  margin: 50px auto 0;
+  margin: 0px auto 0;
   border-radius: 5px;
   position: relative;
   width: 90%;
@@ -40,21 +40,21 @@ body {
   position: absolute;
   top: 60px;
   left: -10rem;
- width: 400px;
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   
   /* background: purple; */
 
 }
 
 #btn-reset {
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    background: lightcyan;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  background: lightcyan;
   background-image: url(./ressources/arrow-rotate-left.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 50vh;
   min-height: 400px;
   max-height: 680px;
   border: none;
@@ -78,12 +78,12 @@ body {
   /* background: pink; */
   padding: 0;
   order: 0;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 .container-respirateur {
   width: 100px;
   margin: 0 auto;
-  height: 450px;
+  height: 400px;
   display: block;
   position: relative;
   background: none;
@@ -261,7 +261,7 @@ body {
 
 @media screen and (min-width : 768px ) {
   .section-principale {
-    margin: 80px auto 0;
+    margin: 0px auto 0;
     border-radius: 5px;
     position: relative;
     width: 90%;
@@ -276,8 +276,8 @@ body {
     max-width: 800px;
     height: 80px;
     /* background: red; */
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 1%;
+    margin-bottom: 10%;
   }
   .box-air {
     display: flex;
