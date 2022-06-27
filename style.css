@@ -277,7 +277,7 @@ body {
     height: 80px;
     /* background: red; */
     margin-top: 1%;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
   }
   .box-air {
     display: flex;
@@ -314,13 +314,37 @@ position: relative;
 
 @media screen and (min-width : 1200px ) {
   .box-air {
-min-height: 450px;
+    min-height: 450px;
     height: 58vh;
+    margin-bottom: 0%;
+  } 
+  .container-respirateur {
+    margin-bottom: 0px;;
   }
+  .container-timer{
+    position: absolute;
+    top:50%;
+    right: 100px;
+    max-width: 300px;
+  }
+  p{
+    position:absolute;
+    top:45%;
+    left: 27%;
+   color: whitesmoke;
+   
+   width: 100%;
+   text-align: right;
+   font-weight: 600;
+   font-size: 20px;
+   /* background: #000; */
+ }
+ 
 }
 @media screen and (min-width : 2800px ) {
   .box-air {
 max-height: 950px;
     height: 54vh;
+    margin-bottom: 20%;
   }
 }
